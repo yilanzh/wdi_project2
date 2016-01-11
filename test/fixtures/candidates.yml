@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  party_id: 
+  betfaircode: MyString
+  primaryodds: 1.5
+  presidencyodds: 1.5
+
+two:
+  name: MyString
+  party_id: 
+  betfaircode: MyString
+  primaryodds: 1.5
+  presidencyodds: 1.5

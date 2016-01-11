@@ -1,0 +1,280 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ /* GLOBAL */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+.container {
+	text-align: center;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	background: rgba(225,225,225,0.65);
+	z-index: 100;
+    position: relative;
+}
+
+body{
+	width: 80%;
+	height: 90%;
+  	margin: 0 auto;
+	font-family: 'Roboto Slab', serif;
+	background: url("bg.jpg");
+	background-color: #cccccc;
+	background-size: cover;
+}
+
+p{
+	font-size: 1.2em;
+	margin: 1.9em;
+	text-align: left;
+}
+
+h1{
+	font-family: "Bitter", serif;
+	color: navy;
+	font-size: 3.5em;
+	text-align: center;
+	margin-top: 1em;
+	padding-top: 1.2em;
+	margin-bottom: 1em;
+	text-shadow: 2px 2px 5px gray;
+	/*-webkit-text-stroke-width: 2px;*/
+}
+
+h2 {
+	color: darkred;
+	font-size: 2.5em;
+	text-align: left;
+	margin-top: 2em;
+	margin-bottom: 1.5em;
+	margin-left: 2em;
+}
+
+p {
+	font-size: 2em;
+	text-align: justify;
+	margine:0.5em;
+}
+
+.firstheading{
+	text-align: center;
+}
+
+.party-table {
+	font-family: 'Roboto Slab', serif;
+	position: relative;
+	z-index: 100;
+	border-collapse: collapse;
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+td {
+	font-size: 1em;
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+	padding-top: 1em;
+	border-bottom: 1px solid gray;
+}
+
+#candidate-submit {
+	display: inline-block;
+	margin: 1.2em;
+	color: white;
+	background-color: #4E51A8;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+
+}
+
+#candidate-submit:hover {
+	background-color: #3136FF;
+	border-color: rgba(0,0,0,0.5);
+}
+
+/*#candidate-submit:active {
+	background-color: #7D81FF;
+	border-color: rgba(0,0,0,0.9);
+	}*/
+
+
+#candidate-submit {
+    display: inline-block;
+    margin: 1.2em;
+    color: white;
+    background-color: #4E51A8 ;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-bottom-width: 3px;
+
+}
+
+
+svg {
+	background: rgba(225,225,225,0.65);
+	margin-top: 20px;
+	margin-bottom: 20px;
+	/*margin-left: 60px;*/
+	position: relative;
+}
+
+.axis {
+	fill: none;
+	stroke: gray;
+	shape-rendering: scrispEdges;
+	font-family: sans-serif;
+	font-size: 11px;
+}
+
+text {
+	font-size: 1em;
+	fill: black;
+	font-family: "Roboto Slab", serif;
+	text-shadow: 2px 2px 5px darkgray;
+}
+
+text.party-name, text.party-value {
+	fill: white;
+	font-size: 1.2em;
+}
+
+text.candi {
+	fill: #191A33;
+	font-size: 1em;
+}
+
+/*text.demo-value, text.party-value{
+	fill: dimgray;
+	font-family: "Roboto Slab", serif;
+	font-size: 1.2em;
+}
+
+text.repu-value {
+	fill: dimgray;
+	font-family: "Roboto Slab", serif;
+	font-size: 1.2em;}
+
+
+text.party-name{	
+
+	-webkit-text-stroke-width: 0.2em;
+}
+
+text.demo-name {
+	font-family: "Roboto Slab", serif;
+	font-size: 1em;
+	
+	-webkit-text-stroke-width: 0.2em;
+}
+
+text.repu-name {
+	font-family: "Roboto Slab", serif;
+	font-size: 1.1em;
+	-webkit-text-stroke-width: 0.2em;
+}
+
+text.pres-name {
+	font-family: "Roboto Slab", serif;
+	font-size: 1.1em;
+	-webkit-text-stroke-width: 0.2em;
+}
+*/
+
+rect {
+  -webkit-transition: fill 250ms linear;
+}
+
+
+rect:nth-child(odd) {
+  fill: navy;
+}
+
+rect:nth-child(even) {
+  fill: firebrick;
+}
+
+rect:hover {
+  fill: red;
+}
+
+
+
+.bigdiv {
+    width: 1010px;
+    height: 1000px;
+}
+
+.quat {
+    width: 505px;
+    height: 500px;
+    /*outline: 1px solid;*/
+    float: left;
+}
+
+
+.clinton, .sanders, .rubio, .trump, .bush, .carson, .christie, .cruz {
+    height: 370px;
+    width: 250px;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    font-size: 13px;
+    font-family: sans-serif;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+}
+
+
+img {
+    border-radius: 10px;
+}
+
+.chart_title {
+	font-size: 15px;
+	font-weight: bold;
+}

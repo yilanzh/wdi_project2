@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @candidate.name %>
+</p>
+
+<p>
+  <strong>Party:</strong>
+  <%= @candidate.party %>
+</p>
+
+<p>
+  <strong>Betfaircode:</strong>
+  <%= @candidate.betfaircode %>
+</p>
+
+<p>
+  <strong>Primaryodds:</strong>
+  <%= @candidate.primaryodds %>
+</p>
+
+<p>
+  <strong>Presidencyodds:</strong>
+  <%= @candidate.presidencyodds %>
+</p>
+
+<%= link_to 'Edit', edit_candidate_path(@candidate) %> |
+<%= link_to 'Back', candidates_path %>

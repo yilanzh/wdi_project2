@@ -1,0 +1,37 @@
+<%= form_for(@candidate) do |f| %>
+  <% if @candidate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@candidate.errors.count, "error") %> prohibited this candidate from being saved:</h2>
+
+      <ul>
+      <% @candidate.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :party_id %><br>
+    <%= f.text_field :party_id %>
+  </div>
+  <div class="field">
+    <%= f.label :betfaircode %><br>
+    <%= f.text_field :betfaircode %>
+  </div>
+  <div class="field">
+    <%= f.label :primaryodds %><br>
+    <%= f.text_field :primaryodds %>
+  </div>
+  <div class="field">
+    <%= f.label :presidencyodds %><br>
+    <%= f.text_field :presidencyodds %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
